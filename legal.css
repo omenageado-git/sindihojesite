@@ -1,0 +1,135 @@
+:root {
+  --verde: #0f8f83;
+  --verde-escuro: #006f67;
+  --verde-claro: #dff4f0;
+  --grafite: #1c2726;
+  --grafite-2: #34413f;
+  --off-white: #f8fbfa;
+  --branco: #ffffff;
+  --borda: #dce9e6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--grafite);
+  background: var(--off-white);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--verde-escuro);
+}
+
+header {
+  background: var(--branco);
+  border-bottom: 1px solid var(--borda);
+}
+
+.container {
+  width: min(calc(100% - 32px), 820px);
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--verde-escuro);
+  text-decoration: none;
+}
+
+header nav a {
+  margin-left: 16px;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+main {
+  padding: 40px 0 64px;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  line-height: 1.2;
+  color: var(--grafite);
+}
+
+.meta {
+  margin-top: 8px;
+  color: var(--grafite-2);
+  font-size: 0.95rem;
+}
+
+.resumo {
+  margin: 24px 0 8px;
+  padding: 16px 20px;
+  background: var(--verde-claro);
+  border-radius: 16px;
+}
+
+h2 {
+  margin: 36px 0 10px;
+  font-size: 1.25rem;
+  color: var(--verde-escuro);
+}
+
+p,
+li {
+  margin-top: 10px;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: collapse;
+  background: var(--branco);
+}
+
+th,
+td {
+  padding: 10px 12px;
+  border: 1px solid var(--borda);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  width: 38%;
+  background: var(--off-white);
+}
+
+footer {
+  border-top: 1px solid var(--borda);
+  padding: 24px 0 40px;
+  color: var(--grafite-2);
+  font-size: 0.9rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --grafite: #e6efed;
+    --grafite-2: #b8c7c4;
+    --off-white: #121a19;
+    --branco: #182221;
+    --borda: #2a3836;
+    --verde-claro: #16332f;
+    --verde-escuro: #5fd3c6;
+  }
+}
